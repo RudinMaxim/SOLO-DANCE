@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans','Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: none;
+}
+:root {
+    /* color */
+    --color-main: #202536;
+    --color-text: #606F92;
+    --color-second:#FCB670;
+    --color-white:#ffffff;
+    color: w;
+    /* font */
+    --font-title_page: 90px;
+    --font-title: 24px;
+    --font-second_title: 24px
+    --font-text: 16px;
+    --font-second_text: 20px;
+}
+.wrapper {
+    max-width: 100%;
+    max-height: max-content;
+    margin: 0 auto;
+    position: relative;
+    background-image: linear-gradient(90deg, #F6F6FF 0%, #E8F9FF 100%);
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    z-index: 1;
+}
+header, section, footer { 
+    padding: 20px 0px;
+}
+
