@@ -1,6 +1,5 @@
 /* header */
 
-/* ===header=== */
 header{
     max-width: 100%;
     min-height: 100px;
@@ -15,7 +14,7 @@ header{
     align-items: center;
 }
 .header__nav a{
-    color: #202536;
+    color: var(--color-main);
     text-decoration: none;
     margin-right: 50px;
     transition: all 0.3s;
@@ -27,6 +26,7 @@ header{
 .nav__button:hover{
     background-color: var(--color-main);
     color: var(--color-white);
+    box-shadow: 0 6px 12px 0 var(--color-main);
 }
 
 .nav__button {
@@ -38,6 +38,7 @@ header{
     border-radius: 20px;
     padding: 17px 30px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .header__burger-btn{
@@ -86,3 +87,4 @@ header{
 .logo__img {
     width: 100px;
 }
+/* header */
