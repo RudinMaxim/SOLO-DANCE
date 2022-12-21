@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Open Sans','Roboto', sans-serif;
@@ -44,54 +45,7 @@ body {
     z-index: 1;
 }
 /* =============== */
-.about__us{
-  display: flex;
-  justify-content: space-between;
-  margin: 90px 0px;
-}
-.lift-side img{
-  max-width: 90%;
-}
-.about__title{
-  font-size: var(--font-title_page);
-}
-.about__us .right-side{
-  width: 50%;
-  padding-left: 50px;
-}
-.about__card{
-  display: flex;
-  flex-direction: column;
-}
-.about__card .card{
-  max-width: 100%;
-  background: rgba(255,255,255,1.5);
-  padding: 30px;
-  position: relative;
-  margin-top: 55px;
-  font-size: var(--font-second_text);
-  border-radius: 20px;
-  box-shadow: 0 1px 1px 0px var(--color-main);
-}
-.about__card .card .card__arrow{
-  position: absolute;
-  right: -50px;
-  z-index: 2;
-}
-.card__wrap .card__title{
-  margin-top: 40px;
-  color: var(--color-main);
-}
-.card__wrap .card__text {
-  margin-top: 5px;
-  color: var(--color-text);
-}
-.card__wrap img{
-  position: absolute;
-  top: -50px;
-  left: 40px;
-  max-width: 100px;
-  border: 5px solid var(--color-white);
-  box-shadow: 0px 0px 3px 0px var(--color-main);
-  border-radius: 50%;
+
+.teachers{
+  transition: all 0.4s;
 }
