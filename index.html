@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header container">
+            <header class="header container" id="header">
                 <div class="header__burger-btn" id="burger">
                     <span></span>
                     <span></span>
@@ -22,7 +22,6 @@
                 <div class="header__logo">
                     <h1>SOLO</h1>
                     <p>DANCE STUDIO</p>
-                    <!-- <img src="./assets/img/logo.png" alt="" class="logo__img"> -->
                 </div>
                 <div style="display: flex; margin-left: 50px;">
                     <nav class="header__nav">
@@ -37,14 +36,14 @@
                 </div>
             </header>
             <main class="main container">
-                <section class="home">
+                <section class="home" id="home">
                     <div class="lift-side">
                         <h1 class="home__title">SOLO</h1>
                         <h1 class="home__title">DANCE</h1>
                         <h1 class="home__title">STUDIO</h1>
                         <div class="home__button">
                             <button>Узнать о нашей студии</button>
-                            <img src="./assets/img/e1a18738-arrow-1-1.png" alt="">
+                            <img src="./assets/img/arrow/e1a18738-arrow-1-1.png" alt="">
                         </div>
                     </div>
                     <div class="right-side">
@@ -59,29 +58,29 @@
                                 </div>			          		
                             </div>	
                         </div>
-                        <img src="./assets/img/3a9de5b1-main-image.png" alt="" class="right-side-dancer">
+                        <img src="./assets/img/photo/3a9de5b1-main-image.png" alt="" class="right-side-dancer">
                     </div>
                 </section>
                 <section class="about-us" id="about__us">
                     <div class="left-side">
-                        <img src="./assets/img/ff757cdc-main-image-2.png" alt="">
+                        <img src="./assets/img/photo/ff757cdc-main-image-2.png" alt="">
                     </div>
                     <div class="right-side">
                         <h1 class="about__title">О нас</h1>
                         <div class="about__card">
                             <div class="card">
                                 <div class="card__wrap">
-                                    <img src="./assets/img/4cd7f27c-icon-3.svg" alt="">
+                                    <img src="./assets/img/svg/4cd7f27c-icon-3.svg" alt="">
                                     <h1 class="card__title">Танцевально-акробатическая</h1>
                                     <p class="card__text">
                                         Танцевально-акробатическая студия для детей и подростков! Самые современный и актуальные танцевальные направления в комплексе с классическими акробатическими элементами!
                                     </p>
                                 </div>
-                                <img src="./assets/img/r_arrow.png" alt="" class="card__arrow">
+                                <img src="./assets/img/arrow/r_arrow.png" alt="" class="card__arrow">
                             </div>
                             <div class="card" style="left: 100px; top: 10px;">
                                 <div class="card__wrap">
-                                    <img src="./assets/img/8ce2eb39-icon-1.svg" alt="">
+                                    <img src="./assets/img/svg/8ce2eb39-icon-1.svg" alt="">
                                     <h1 class="card__title">Уникальная возможность</h1>
                                     <p class="card__text">
                                         Уникальная возможность заниматься танцами и акробатикой профессионально в одном месте! Мы - первая студия в городе, тренирующая детей в новом виде спорта- «Акробатический танец!» 
@@ -92,14 +91,33 @@
                         </div>
                     </div>
                 </section>
-                <section class="teachers">
-                    <div class="testimonial-container" id="testimonial-container"></div>
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
-                </section>
             </main>
-            <footer class="footer">
-                <!-- <h1>footer</h1> -->
+            <footer class="footer container">
+                <div class="locations">
+                    <img src="./assets/img/svg/loc.svg" alt="loc">
+                    <a href="https://goo.gl/maps/XgiK6iZxcGfzNtKi8" target="_blank">ул. КИМ, 75 (этаж 3, офис 3)</a>
+                </div>
+                <div class="phone">
+                    <img src="./assets/img/svg/phone.svg" alt="phone">
+                    <a href="tel:+7 (919) 469-56-22" target="_blank">+7 (919) 469-56-22</a>
+                </div>
+                <div class="schedule">
+                    <img src="./assets/img/svg/calendar.svg" alt="calendar">
+                    <p>ПН-ПТ: 15:00 - 21:00</p>
+                    <p>СБ-ВС: Выходной</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://vk.com/solo210462846" target="_blank"><img src="./assets/img/svg/vk.svg" alt="vk"></a>
+                    <a href="https://instagram.com/solo_acro_dance?utm_medium=copy.." target="_blank"><img src="./assets/img/svg/inst.svg" alt="instagram"></a>
+                </div>
+                <div class="logo">
+                    <img src="./assets/img/photo/logo.jpg" alt="logo" style="max-width: 100px;">
+                </div>
+                <div class="top-button">
+                    <a href="#header">
+                        <img src="./assets/img/svg/up-arrow-alt.svg" alt="up-arrow">
+                    </a>
+                </div>
             </footer>
         </div>
         <script src="./js/main.js"></script>
