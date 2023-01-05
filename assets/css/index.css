@@ -45,4 +45,214 @@ body {
     z-index: 1;
 }
 /* =============== */
+.calendar{
+    background: #c2e4e3;
+}
+.calendar-grid {  
+  display: grid;
+  grid-template-columns: repeat(7, 14%);
+  grid-template-rows: 70px repeat(6, 100px);
+  grid-auto-columns: 150px;
+  grid-auto-rows: 100px;
+  gap: 4px 4px; 
+  grid-auto-flow: row;
+  grid-template-areas: 
+  "timetitle mon tue wed thu fri sat"
+  "time1 mon-11 tue-11 wed-11 thu-11 fri-11 sat-11"
+  "time2 mon-16 tue-16 wed-16 thu-16 fri-16 sat-16"
+  "time3 mon-17 tue-17 wed-17 thu-17 fri-17 sat-17"
+  "time4 mon-18 tue-18 wed-18 thu-18 fri-18 sat-18"
+  "time5 mon-19 tue-19 wed-19 thu-19 fri-19 sat-19"
+  "time6 mon-20 tue-20 wed-20 thu-20 fri-20 sat-20"; 
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+.calendar-hover-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+	bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.75s ease-in-out 0s; 
+  -moz-transition: all 0.75s ease-in-out 0s;
+  transition: all 0.75s ease-in-out 0s;
+  }
+.calendar-hover-box:after {
+  position: relative;
+  top: -60px;
+  opacity: 0;
+  content: "😍Хочу сюда";
+  color: var(--color-white);
+  letter-spacing: 2px;
+
+
+  -webkit-transition: all 0.75s ease-in-out 0s; 
+  -moz-transition: all 0.75s ease-in-out 0s;
+  transition: all 0.75s ease-in-out 0s; 
+}
+  
+.calendar-hover-box:hover:after {
+  opacity: 1;
+  top: 0px;
+} 
+
+.bg-others {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  position: relative;
+}
+.bg-JAZZ-FUNK{
+  position: relative;
+  background-color: #dda7c9;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg-JAZZ-FUNK:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.bg-acrobatica{
+  position: relative;
+  background-color:#84e9c7;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg-acrobatica:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.bg-acrobatica-kids{
+  position: relative;
+  background-color:#bed8f9;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg-acrobatica-kids:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.choreo-kids{
+  position: relative;
+  background-color:#eaddba;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.choreo-kids:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.bg-rasiyzka {
+  position: relative;
+  background-color: #fff5d2;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg-rasiyzka:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.bg-hip_hop{
+  position: relative;
+  background-color:#9f96e7;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg-hip_hop:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.bg-hip_hop-7{
+  position: relative;
+  background-color:#ffd0c8;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg-hip_hop-7:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.bg-k_pop{
+  position: relative;
+  background-color:#a6e1ff;
+  cursor: pointer;
+  border-radius: 10px;
+}.bg-k_pop:hover .calendar-hover-box{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/*  */
+.calendar-grid div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timetitle { 
+  grid-area: timetitle;
+}
+.time1 { grid-area: time1; }
+
+.time2 { grid-area: time2; }
+
+.time3 { grid-area: time3; }
+
+.time4 { grid-area: time4; }
+
+.time5 { grid-area: time5; }
+
+.time6 { grid-area: time6; }
+
+.mon { grid-area: mon; }
+
+.tue { grid-area: tue; }
+
+.wed { grid-area: wed; }
+
+.thu { grid-area: thu;}
+
+.fri { grid-area: fri; }
+
+.mon-11 { grid-area: mon-11; }
+
+.tue-11 { grid-area: tue-11; }
+
+.sat { grid-area: sat; }
+
+.thu-11 { grid-area: thu-11; }
+
+.fri-11 { grid-area: fri-11; }
+
+.sat-16 { grid-area: sat-16; }
+
+.mon-17 { grid-area: mon-17; }
+
+.tue-17 { grid-area: tue-17; }
+
+.thu-17 { grid-area: thu-17; }
+
+.sat-17 { grid-area: sat-17; }
+
+.mon-18 { grid-area: mon-18; }
+
+.tue-18 { grid-area: tue-18; }
+
+.wed-18 { grid-area: wed-18; }
+
+.thu-18 { grid-area: thu-18; }
+
+.fri-18 { grid-area: fri-18; }
+
+.sat-18 { grid-area: sat-18; }
+
+.mon-19 { grid-area: mon-19; }
+
+.wed-19 { grid-area: wed-19; }
+
+.fri-19 { grid-area: fri-19; }
+
+.sat-19 { grid-area: sat-19; }
+
+.wed-20 { grid-area: wed-20; }
+
+.fri-20 { grid-area: fri-20; }
 

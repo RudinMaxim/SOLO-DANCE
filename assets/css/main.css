@@ -336,7 +336,6 @@ i {
 .about-us{
   display: flex;
   justify-content: space-between;
-  margin: 90px 0px;
 }
 .lift-side img{
   max-width: 90%;
