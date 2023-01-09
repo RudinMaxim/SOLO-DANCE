@@ -39,6 +39,8 @@ header{
     padding: 17px 30px;
     cursor: pointer;
     transition: all 0.3s;
+    text-decoration: none;
+    color: var(--color-main);
 }
 
 .header__burger-btn{
@@ -339,52 +341,6 @@ i {
   border: 5px solid var(--color-white);
   box-shadow: 0px 0px 3px 0px var(--color-main);
   border-radius: 50%;
-}
-.footer { 
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-.footer__top{ 
-  margin-bottom: 20px;
-}
-.footer__top,.footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 100%;
-}
-.footer__locations, .footer__phone{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer__locations a,.footer__phone > a{
-  text-decoration: none;
-  color: var(--color-text);
-  margin-left: 8px;
-}
-.footer__schedule{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer__schedule span{
-  margin-left: 8px;
-}
-.footer__logo{
-  text-align: center;
-}
-.footer__social-links,.footer__top-button > a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__social-links a:first-child{
-  margin-right: 5px;
 }
 /*  */
 
@@ -710,3 +666,87 @@ grid-area: timetitle;
   background-color: var(--color-second);
 }
 /*  */
+.price {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: 8px 16px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.price h1 {
+  text-align: center;
+  font-size: var(--font-title_page);
+  color: var(--color-main);
+  padding: 16px 0px;
+}
+
+.pricing-table {
+  box-shadow: 0 0 32px rgba(25, 0, 58, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.pricing-plan img{
+  width: 150px;
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid var(--color-second);
+  padding: 16px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: var(--color-second);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+
+.pricing-price {
+  color: var(--color-second);
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  background-color: var(--color-second);
+  border-radius: 10px;
+  color: var(--color-main);
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 130ms ease-in-out;
+  font-weight: 600;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
