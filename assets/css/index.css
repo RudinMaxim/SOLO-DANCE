@@ -22,7 +22,7 @@ body {
     --color-white:#ffffff;
     --color-bg:linear-gradient(90deg, #F6F6FF 0%, #E8F9FF 100%);
     /* font */
-    --font-title_page: 90px;
+    --font-title_page: 80px;
     --font-title: 24px;
     --font-second_title: 24px
     --font-text: 16px;
@@ -43,39 +43,105 @@ body {
     z-index: 1;
 }
 /* =============== */
-form{
-    height: 1000px;
-}
-.multiselect {
-    width: 200px;
-  }
-  
-  .selectBox {
+.price {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 8px 16px;
     position: relative;
-  }
-  
-  .selectBox select {
     width: 100%;
-    font-weight: bold;
+    z-index: 10;
+  }
+  .price h1 {
+    text-align: center;
+    font-size: var(--font-title_page);
+    color: var(--color-main);
+    padding: 16px 0px;
   }
   
-  .overSelect {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+  .pricing-table {
+    box-shadow: 0 0 32px rgba(25, 0, 58, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .pricing-plan img{
+    width: 150px;
   }
   
-  #checkboxes {
-    display: none;
-    border: 1px #dadada solid;
+  .pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
   }
   
-  #checkboxes label {
+  .pricing-plan {
+    border-bottom: 1px solid var(--color-second);
+    padding: 16px;
+  }
+  
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+  
+  
+  .pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  
+  .pricing-header {
+    color: var(--color-text);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+    color: var(--color-second);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  
+  .pricing-price {
+    color: var(--color-second);
     display: block;
+    font-size: 32px;
+    font-weight: 700;
   }
   
-  #checkboxes label:hover {
-    background-color: #1e90ff;
+  .pricing-button {
+    background-color: var(--color-second);
+    border-radius: 10px;
+    color: var(--color-main);
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 130ms ease-in-out;
+    font-weight: 600;
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+    background-color: var(--color-main);
+    color: var(--color-white);
+  }
+  
+
+  @media (min-width: 900px) {
+    .pricing-table {
+      flex-direction: row;
+    }
+  }
+  @media (min-width: 900px) {
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid var(--color-second);
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan:last-child {
+      border-right: none;
+    }
   }
