@@ -1,96 +1,4 @@
-/* header */
-
-header{
-    max-width: 100%;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: var(--font-second_text);
-}
-
-.header__nav{
-    display: flex;
-    align-items: center;
-}
-.header__nav a{
-    color: var(--color-main);
-    text-decoration: none;
-    margin-right: 50px;
-    transition: all 0.3s;
-    position: relative;
-}
-.nav__link:hover{
-    color: var(--color-second);
-}
-.nav__button:hover{
-    background-color: var(--color-main);
-    color: var(--color-white);
-    box-shadow: 0 6px 12px 0 var(--color-main);
-}
-
-.nav__button {
-    font-weight: 500;
-    font-size: var(--font-second_text);
-    font-family: 'Open Sans','Roboto', sans-serif;;
-    background-color: #20253600;
-    border: 1px solid var(--color-main);
-    border-radius: 20px;
-    padding: 17px 30px;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-    color: var(--color-main);
-}
-
-.header__burger-btn{
-    display: none;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    z-index: 2;
-    margin-top: 30px;
-}
-.header__burger-btn span{
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: var(--color-main);
-    left: 5px;
-    transition: transform .3s, opacity .3s, background-color .3s;
-}
-.header__burger-btn span:nth-child(1) {
-    transform: translateY(-10px);
-}
-
-.header__burger-btn span:nth-child(3) {
-    transform: translateY(10px);
-}
-.header.open .header__burger-btn span {
-    background-color: white;
-}
-.header.open .header__burger-btn span:nth-child(1) {
-    transform: translateY(0) rotate(45deg);
-}
-
-.header.open .header__burger-btn span:nth-child(2) {
-    opacity: 0;
-}
-
-.header.open .header__burger-btn span:nth-child(3) {
-    transform: translateY(0) rotate(-45deg);
-}
-.header__logo {
-    display: block;
-}
-
-.logo__img {
-    width: 100px;
-}
-/* header */
-
+/* =======home======= */
 .home{
     display: flex;
     align-items: center;
@@ -104,7 +12,6 @@ header{
 }
 .home__title{
     font-size: var(--font-title_page);
-    /* line-height:1,; */
 }
 .home__button {
     position: relative;
@@ -140,8 +47,7 @@ header{
 .home .right-side-dancer.root{
   max-width: 90%;
 }
-/* референсы  тут https://codepen.io/ig_design/pen/BajVZre*/
-/* pop-up */
+/* =======pop-up======= */
 .home .right-side-btn{
     position: absolute;
     top: 410px;
@@ -152,10 +58,6 @@ header{
 [type="checkbox"]:not(:checked){
   position: absolute;
   left: -9999px;
-}
-i {
-  font-size: 50px;
-  color: var(--color-white);
 }
 .modal-btn:checked + label,
 .modal-btn:not(:checked) + label{
@@ -282,14 +184,7 @@ i {
   transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
 }
 
-
-@media screen and (max-width: 500px) {
-    .modal-wrap {
-        width: calc(100% - 40px);
-        padding-bottom: 15px;
-    }
-}
-/* ==== */
+/* =======about======= */
 
 .about-us{
   display: flex;
@@ -344,7 +239,7 @@ i {
   box-shadow: 0px 0px 3px 0px var(--color-main);
   border-radius: 50%;
 }
-/*  */
+/* =======calendar======= */
 
 .calendar h1{
   text-align: center;
@@ -507,7 +402,8 @@ background-color: rgba(0, 0, 0, 0.5);
 .bg-SAKURA:hover .calendar-hover-box{
   background-color: rgba(0, 0, 0, 0.5); 
 }
-/*  */
+
+/* =======calendar-grid======= */
 .calendar-grid div{
 display: flex;
 align-items: center;
@@ -582,7 +478,7 @@ grid-area: timetitle;
 
 .fri-20 { grid-area: fri-20; }
 
-/*  */
+/* =======teachers======= */
 .teachers .row {
   display: flex;
   flex-wrap: wrap;
@@ -667,7 +563,8 @@ grid-area: timetitle;
   transform: scale(1.15);
   background-color: var(--color-second);
 }
-/*  */
+
+/* =======price======= */
 .price {
   background-color: var(--color-white);
   border-radius: 8px;
@@ -752,7 +649,7 @@ grid-area: timetitle;
   color: var(--color-white);
 }
 
-/*  */
+/* =======form======= */
 
 .form__box{
   height: max-content;
@@ -831,134 +728,4 @@ form .submit__button-inner button{
 
 .personal img{
   max-height: 500px;
-}
-
-
-/*  */
-
-.footer { 
-  height: max-content;
-  background-color: var(--color-main);
-}
-.footer__info{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
-.footer__colum{
-  display: flex;
-  flex-direction: column;
-
-}
-.footer__item{
-  display: flex;
-  flex-direction: column;
-}
-.footer__window{
-  max-width: 600px;
-  font-weight: 500;
-  background-color: var(--color-text);
-  text-align: justify;
-  padding: 20px;
-  font-size: 16px;
-  color: var(--color-main);
-  border-radius: 0px 0px 8px 8px;
-}
-.quote{
-  text-align: center;
-  margin-top: 20px;
-  font-size: var(--font-second_text);
-  color: var(--color-white);
-}
-.follow__bar h3{
-  margin-top: 8px;
-  font-size: var(--font-title);
-  color: var(--color-main);
-}
-.follow__social{
-  display: flex;
-  align-items: center;
-}
-.follow__social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-second_text);
-  text-decoration: none;
-  height: 2em;
-  width: 2em;
-  background-color: var(--color-second);
-  padding: 8px 16px;
-  margin-right: 8px;
-  margin-top: 8px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.follow__social a:hover{
-  background-color: var(--color-main);
-}
-.follow__social a i{
-  font-size: var(--font-second_text);
-}
-
-.footer__item-top{
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer__colum:last-child{
-  margin-left: 20px;
-}
-
-.footer__card{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-size: var(--font-second_text);
-  margin-bottom: 20px;
-}
-.footer__card .card__text{
-  margin-left: 4px;
-}
-.footer__card a{
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: var(--font-second_text);
-}
-.footer__bottom-colum{
-  display: flex;
-  justify-content: space-between;
-}
-.footer__link-list{
-  display: flex;
-  flex-direction: column;
-}
-.footer__link-list:last-child{
-  margin-left: 20px;
-  text-align: end;
-}
-.footer__link-list h3{
-  color:var(--color-white);
-  font-size: var(--font-second_text);
-}
-.footer__link-list a {
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: var(--font-second_text);
-}
-
-
-.footer__copywriting a{
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  color: var(--color-text);
-  background-color: var(--color-main);
-}
-.footer__copywriting a:hover{
-  text-decoration: underline;
 }

@@ -67,3 +67,9 @@
       border-right: none;
     }
   }
+  @media screen and (max-width: 500px) {
+    .modal-wrap {
+        width: calc(100% - 40px);
+        padding-bottom: 15px;
+    }
+}
