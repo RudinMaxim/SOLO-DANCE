@@ -4,30 +4,31 @@
     align-items: center;
     justify-content: space-between;
 }
-.home .right-side{
-  max-width: 50%;
+.home .lift-side{
+  max-width: 45%;
 }
 .home .right-side{
-    max-width: 50%;
+    max-width: 45%;
 }
 .home__title{
     font-size: var(--font-title_page);
 }
 .home__button {
     position: relative;
+    max-width:max-content;
+    min-width: max-content;
 }
 .home__button img{
     transform: rotate(120deg);
-
+    max-width: 100px;
 }
 .home__button a{
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--font-second_text);
-    font-family: 'Open Sans','Roboto', sans-serif;
     background-color: var(--color-second);
     border: none;
     border-radius: 20px;
-    padding: 17px 30px;
+    padding: 15px 35px;
     cursor: pointer;
     color: var(--color-main);
     text-decoration: none;
@@ -188,16 +189,11 @@
 
 .about-us{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.lift-side img{
-  max-width: 90%;
-}
-.about__title{
-  text-align: center;
-  font-size: var(--font-title_page);
-  color: var(--color-main);
-  padding: 16px 0px;
+.about-us .lift-side img{
+  max-width: 80%;
 }
 .about-us .right-side{
   width: 50%;
@@ -212,10 +208,14 @@
   background: rgba(255,255,255,1.5);
   padding: 30px;
   position: relative;
-  margin-top: 55px;
+  margin-top: 60px;
   font-size: var(--font-second_text);
   border-radius: 20px;
-  box-shadow: 0 1px 1px 0px var(--color-main);
+  box-shadow: 0 0 32px rgb(25 0 58 / 10%)
+}
+.about__card .card:last-child {
+  top: 10px;
+  left: 90px;
 }
 .about__card .card .card__arrow{
   position: absolute;
@@ -227,7 +227,7 @@
   color: var(--color-main);
 }
 .card__wrap .card__text {
-  margin-top: 5px;
+  margin-top: 12px;
   color: var(--color-text);
 }
 .card__wrap img{
@@ -241,12 +241,6 @@
 }
 /* =======calendar======= */
 
-.calendar h1{
-  text-align: center;
-  font-size: var(--font-title_page);
-  color: var(--color-main);
-  padding: 16px 0px;
-}
 .calendar__box{
   background-color: var(--color-white);
   border-radius: 8px;
@@ -487,14 +481,6 @@ grid-area: timetitle;
 }
 .teachers .column {
   width: 100%;
-  padding: 8px 8px;
-}
-.teachers h1 {
-  width: 100%;
-  text-align: center;
-  font-size: var(--font-title_page);
-  color: var(--color-main);
-  padding: 16px 0px;
 }
 .teachers .card {
   box-shadow: 0 0 32px rgba(25, 0, 58, 0.1);
@@ -504,6 +490,7 @@ grid-area: timetitle;
   transition: 0.3s;
   background-color: var(--color-white);
   min-height: 500px;
+  margin: 8px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -572,12 +559,6 @@ grid-area: timetitle;
   position: relative;
   width: 100%;
   z-index: 10;
-}
-.price h1 {
-  text-align: center;
-  font-size: var(--font-title_page);
-  color: var(--color-main);
-  padding: 16px 0px;
 }
 
 .pricing-table {
@@ -657,17 +638,14 @@ grid-area: timetitle;
   border-radius: 8px;
   box-shadow: 0 0 32px rgb(25 0 58 / 10%);
 }
-.form h1{
-  text-align: center;
-  font-size: var(--font-title_page);
-  color: var(--color-main);
-  padding: 16px 0px;
-}
 form .personal{
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 100%;
+}
+.form__box img {
+  border-radius: 0px 8px 8px 0px;
 }
 form .fields{
   min-width: 70%;

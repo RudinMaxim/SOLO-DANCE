@@ -24,7 +24,6 @@ body {
     /* font */
     --font-title_page: 80px;
     --font-title: 24px;
-    --font-second_title: 24px
     --font-text: 16px;
     --font-second_text: 20px;
 }
@@ -52,6 +51,12 @@ i {
     font-size: 50px;
     color: var(--color-white);
   }
+.title-section{
+  text-align: center;
+  font-size: var(--font-title_page);
+  color: var(--color-main);
+  padding: 16px 0px;
+}
 /* =======header======= */
 
 header{
@@ -90,7 +95,7 @@ header{
     background-color: #20253600;
     border: 1px solid var(--color-main);
     border-radius: 20px;
-    padding: 17px 30px;
+    padding: 15px 35px;
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
@@ -144,7 +149,7 @@ header{
     width: 100px;
 }
 
-/* =======form======= */
+/* =======footer======= */
 .footer { 
     height: max-content;
     background-color: var(--color-main);
@@ -152,7 +157,7 @@ header{
   .footer__info{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 12px 24px;
   }
   .footer__colum{
     display: flex;
@@ -180,7 +185,6 @@ header{
     color: var(--color-white);
   }
   .follow__bar h3{
-    margin-top: 8px;
     font-size: var(--font-title);
     color: var(--color-main);
   }
