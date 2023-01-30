@@ -8,7 +8,12 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/media.css">
         <title>SOLO DANCE STUDIO</title>
-        <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
@@ -20,8 +25,7 @@
                     <span></span>
                 </div>
                 <div class="header__logo">
-                    <h1>SOLO</h1>
-                    <p>DANCE STUDIO</p>
+                    <h3>SOLO DANCE STUDIO</h3>
                 </div>
                 <div style="display: flex; margin-left: 50px;">
                     <nav class="header__nav">
@@ -66,14 +70,14 @@
                         <img src="./assets/img/photo/ff757cdc-main-image-2.png" alt="">
                     </div>
                     <div class="right-side">
-                        <h1 class="title-section">👋О нас</h1>
+                        <h1 class="title-section">О нас</h1>
                         <div class="about__card">
                             <div class="card">
                                 <div class="card__wrap">
                                     <img src="./assets/img/svg/4cd7f27c-icon-3.svg" alt="">
                                     <h1 class="card__title">Танцевально-акробатическая</h1>
                                     <p class="card__text">
-                                        Танцевально-акробатическая студия для детей и подростков! Самые современный и актуальные танцевальные направления в комплексе с классическими акробатическими элементами!
+                                        Танцевально-акробатическая студия для детей и подростков! Самые современные и актуальные танцевальные направления в комплексе с классическими акробатическими элементами!
                                     </p>
                                 </div>
                                 <img src="./assets/img/arrow/r_arrow.png" alt="" class="card__arrow">
@@ -92,8 +96,8 @@
                     </div>
                 </section>
                 <section class="teachers container" id="teachers">
+                    <h1 class="title-section">Наша команда</h1>
                     <div class="row">
-                        <h1 class="title-section">👯‍♂️Наша команда</h1>
                       </div>
                       <div class="row">
                         <!-- Column 1-->
@@ -155,19 +159,19 @@
                               <img src="./assets/img/photo/te2.jpg" />
                             </div>
                             <h3>
-                                Семерикова Людмила Алексеевна
+                                София Пожаринская
                             </h3>
                             <p>
-                                Педагог по направлениям: K-POP, РАСТЯЖКА
+                                Педагог по направлениям: K-POP
                             </p>
                             <div class="icons">
                                 <!-- <a href="http://" target="_blank">
                                     <i class='bx bx-right-arrow-alt'></i>
                                 </a> -->
-                                <a href="http://" target="_blank">
+                                <a href="https://vk.com/id204477658" target="_blank">
                                     <i class='bx bxl-vk'></i>
                                 </a>
-                                <a href="http://" target="_blank">
+                                <a href="https://instagram.com/sunsofflower?igshid=YmMyMTA2M2Y=" target="_blank">
                                     <i class='bx bxl-instagram-alt' ></i>
                                 </a>
                             </div>
@@ -182,7 +186,7 @@
                                 Алёна Ивачева 
                               </h3>
                               <p>
-                                  Педагог по направлениям: K-POP, РАСТЯЖКА
+                                Педагог на направлению VOGUE
                               </p>
                               <div class="icons">
                                   <!-- <a href="http://" target="_blank">
@@ -200,7 +204,7 @@
                       </div>
                 </section>
                 <section class="calendar container" id="calendar">
-                    <h1 class="title-section">📅Расписание</h1>
+                    <h1 class="title-section">Расписание</h1>
                     <div class="calendar__box">
                         <div class="calendar-grid container">
                             <div class="timetitle">
@@ -325,9 +329,7 @@
                                 <p>РАСТЯЖКА</p>
                                 <a href="#form" class="calendar-hover-box"></a>
                             </div>
-                            <div class="sat-18 bg-SAKURA">
-                                <p>SAKURA</p>
-                                <a href="#form" class="calendar-hover-box"></a>
+                            <div class="sat-18 bg-others">
                             </div>
                             
                             <div class="mon-19 bg-hip_hop-7">
@@ -366,9 +368,7 @@
                                 <p>K-POP</p>
                                 <a href="#form" class="calendar-hover-box"></a>
                             </div>
-                            <div class="wed-20 bg-SAKURA">
-                                <p>SAKURA</p>
-                                <a href="#form" class="calendar-hover-box"></a>
+                            <div class="wed-20 bg-others">
                             </div>
                             <div class="thu-20 bg-k_pop">
                                 <p>K-POP</p>
@@ -382,7 +382,7 @@
                     </div>
                 </section>
                 <section class="price container" id="price">
-                    <h1 class="title-section">🎫Абонементы</h1>
+                    <h1 class="title-section">Абонементы</h1>
                     <div class="price pricing-table">
                         <div class="pricing-plan">
                             <img src="./assets/img/photo/DANCE.png" alt="DANCE" class="pricing-img">
@@ -431,8 +431,8 @@
                       </div>
                 </section>
                 <section class="form container" id="form">
-                    <h1 class="title-section">✍Записаться</h1>
-                    <form action="#" method="post" class="form__box">
+                    <h1 class="title-section">Записаться</h1>
+                    <form action="./mail.php" method="post" class="form__box">
                         <div class="personal">
                             <div class="fields">
                                 <div class="input-field">
@@ -446,7 +446,7 @@
                                 </div>
         
                                 <div class="input-field">
-                                    <label>Направление</label>
+                                    <label for="group">Направление</label>
                                     <select required name="group">
                                         <option disabled selected>Выберите группу</option>
                                         <option>JAZZ-FUNK</option>
@@ -454,7 +454,6 @@
                                         <option>АКРОБАТИКА KIDS</option>
                                         <option>VOGUE</option>
                                         <option>РАСТЯЖКА</option>
-                                        <option>SAKURA</option>
                                         <option>CHOREO KIDS</option>
                                         <option>HIP-HOP</option>
                                         <option>HIP-HOP 7+</option>
@@ -506,7 +505,7 @@
                         </div>
                         <div class="footer__item quote" >
                             <p>
-                                😝ПРИХОДИ НА НОГАХ, УХОДИ НА РУКАХ
+                                ПРИХОДИ НА НОГАХ, УХОДИ НА РУКАХ
                             </p>
                         </div>
                     </div>
@@ -550,22 +549,22 @@
                                     <div class="footer__link-list">
                                        <h3>Полезные ссылки</h3>
                                        <a href="#home" class="footer__links">
-                                           🏠Домой
+                                           Домой
                                        </a>
                                        <a href="#about__us" class="footer__links">
-                                           👋О нас
+                                           О нас
                                        </a>
                                        <a href="#teachers" class="footer__links">
-                                           👯‍♂️Наша команда
+                                           Наша команда
                                        </a>
                                        <a href="#calendar" class="footer__links">
-                                           📅Расписание
+                                           Расписание
                                        </a>
                                        <a href="#price" class="footer__links">
-                                           🎫Абонементы
+                                           Абонементы
                                        </a>
                                        <!-- <a href="#form" class="footer__links">
-                                           ✍Записатся
+                                           Записатся
                                        </a> -->
                                     </div>
                                     <div class="footer__link-list">

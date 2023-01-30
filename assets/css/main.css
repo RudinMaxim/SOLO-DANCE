@@ -12,6 +12,7 @@
 }
 .home__title{
     font-size: var(--font-title_page);
+    font-family: 'Krona One', sans-serif;
 }
 .home__button {
     position: relative;
@@ -387,15 +388,7 @@ background-color: rgba(0, 0, 0, 0.5);
 .bg-vague:hover .calendar-hover-box{
   background-color: rgba(0, 0, 0, 0.5); 
 }
-.bg-SAKURA{
-  position: relative;
-  background-color:#93efb5;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.bg-SAKURA:hover .calendar-hover-box{
-  background-color: rgba(0, 0, 0, 0.5); 
-}
+
 
 /* =======calendar-grid======= */
 .calendar-grid div{
