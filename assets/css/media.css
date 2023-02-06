@@ -1,9 +1,3 @@
-/* Large screens */
-@media only screen 
-and (min-width : 1824px) {
-  /* Styles */
-}
-
 /* Desktops*/
 @media only screen and (max-width : 1290px) {
   .container {
@@ -78,18 +72,13 @@ and (min-width : 1824px) {
   }
   
   /* =======footer======= */
-  .footer__info{
-    display:inline;
-  }
-  .footer__window{
-    max-width: 100%;
-  }
+
   .footer__item-top{
-    margin-top: 0px;
-    justify-content: space-around;
+
+    justify-content: space-between;
   } 
   .footer__bottom-colum{
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 /* laptops small */
@@ -137,6 +126,10 @@ and (min-width : 1824px) {
     margin-right: 8px;
     margin-bottom: 70px;
   }
+  .non {
+    display: none;
+  }
+
   /* =======home======= */
   .home {
     flex-direction: column;
@@ -163,7 +156,7 @@ and (min-width : 1824px) {
   }
   .home__button img{
     transform: rotate(240deg);
-}
+  }
   .home .lift-side h1{
     font-size: 60px;
   }
@@ -187,19 +180,24 @@ and (min-width : 1824px) {
   .teachers .card{
     min-height: min-content;
   }
-  
-/* =======form======= */
-form .personal{
-  flex-direction: column;
-}
-.form__box img {
-  display: none;
-}
-form .fields{
-  min-width: 100%;
-  padding: 20px;
-}
-
+  /* =======form======= */
+  form .personal{
+    flex-direction: column;
+  }
+  .form__box img {
+    display: none;
+  }
+  form .fields{
+    min-width: 100%;
+    padding: 20px;
+  }
+  /* footer */
+  .footer__info{
+    flex-direction: column;
+  }
+  .footer__window{
+    max-width: 100%;
+  }
 }
 /* Smartphones */
 

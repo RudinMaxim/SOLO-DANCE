@@ -267,6 +267,7 @@ header{
   
   .footer__copywriting a{
     text-decoration: none;
+    padding-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
