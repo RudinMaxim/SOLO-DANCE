@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
   }
 
   if (count($errors) == 0) {
-    $to = "rudin.maksimka@bk.ru";
+    $to = "solo.dancestudio@yandex.ru";
     $subject = "Отправка формы";
     $message = "Имя: " . $name . "\n" . "Возраст: " . $age . "\n" . "Группа: " . $group . "\n" . "Эл. адрес: " . $email . "\n" . "Телефон: " . $phone;
     $headers = "От: " . $email;
