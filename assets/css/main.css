@@ -44,10 +44,10 @@
   position: relative;
 }
 .home .right-side-dancer{
-    max-width: 90%;
+    max-width: 100%;
 }
 .home .right-side-dancer.root{
-  max-width: 90%;
+  max-width: 100%;
 }
 /* =======pop-up======= */
 .home .right-side-btn{
@@ -241,7 +241,25 @@
   border-radius: 50%;
 }
 /* =======calendar======= */
-
+.calendar_mob{
+  display: none;
+}
+.calendar_mob-inner{
+  background-color: var(--color-white);
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  box-shadow: 0 0 32px rgba(25, 0, 58, 0.1);
+  border-radius: 8px
+}
+.calendar_mob-inner-link{
+  color: var(--color-text);
+  text-decoration: none;
+}
+.calendar_mob-inner-link:hover{
+  text-decoration:underline;
+}
 .calendar__box{
   background-color: var(--color-white);
   border-radius: 8px;
@@ -684,7 +702,7 @@ form .submit__button-inner{
   justify-content: space-between;
 }
 form .submit__button-inner button{
-  width: 45%;
+  width: 100%;
   background-color: var(--color-second);
   border-radius: 8px;
   color: var(--color-main);

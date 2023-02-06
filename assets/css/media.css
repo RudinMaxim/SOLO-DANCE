@@ -2,8 +2,6 @@
 @media only screen and (max-width : 1290px) {
   .container {
     max-width: 1290px;
-    margin-left: 8px;
-    margin-right: 8px;
   }
   /* =======about======= */
   .about__card .card:last-child {
@@ -74,7 +72,6 @@
   /* =======footer======= */
 
   .footer__item-top{
-
     justify-content: space-between;
   } 
   .footer__bottom-colum{
@@ -129,6 +126,9 @@
   .non {
     display: none;
   }
+  .calendar_mob{
+    display: inline;
+  }
 
   /* =======home======= */
   .home {
@@ -138,7 +138,7 @@
   .home .lift-side{
     display: flex;
     align-items: center;
-    
+
   }
   .home .right-side{
     max-width: 100%;
@@ -174,8 +174,10 @@
     padding-left: 0px;
     margin-top: 20px;
   }
-  .about__us .left-side img{
+  .about-us .left-side img{
     margin-top: 20px;
+    max-width: 100%;
+    justify-content: center;
   }
   .teachers .card{
     min-height: min-content;
@@ -206,7 +208,21 @@
     width: calc(100% - 16px);
     padding-bottom: 15px;
   }
-
+  .home  .lift-side{
+    flex-direction: column;
+  }
+  .home .lift-side h1 {
+    font-size: 40px;
+  }
+  .home .lift-side .home__button{
+    margin-top: 20px;
+  }
+  .home .lift-side .home__button img{
+    max-width:80px;
+  }
+  .title-section{
+    font-size: 50px;
+  }
 }
 @media only screen and (max-width : 480px) {
   .home__button a{
@@ -214,10 +230,8 @@
     padding: 12px 24px;
     font-size: var(--font-text);
   }
-  .title-section{
-    font-size: 50px;
-  }
   .home .lift-side h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
+
 }
