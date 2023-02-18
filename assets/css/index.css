@@ -234,6 +234,9 @@ header{
     font-size: var(--font-second_text);
     margin-bottom: 20px;
   }
+  .footer__card:last-child{
+    margin-left: 20px;
+  }
   .footer__card .card__text{
     margin-left: 4px;
   }

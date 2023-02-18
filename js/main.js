@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("header").classList.toggle("open")
     })
 })
-var expanded = false;
+let expanded = false;
 function showCheckboxes() {
-  var checkboxes = document.getElementById("checkboxes");
+  let checkboxes = document.getElementById("checkboxes");
   if (!expanded) {
     checkboxes.style.display = "block";
     expanded = true;
