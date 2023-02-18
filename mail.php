@@ -10,23 +10,23 @@ if (isset($_POST['submit'])) {
   $errors = [];
 
   if (empty($name) || empty($age) || empty($group) || empty($email) || empty($phone)) {
-    array_push($errors, "Все поля обязательны для заполнения");
+    array_push($errors, "All fields are required");
   }
 
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    array_push($errors, "Неверный адрес электронной почты");
+    array_push($errors, "Invalid email address");
   }
 
   if (count($errors) == 0) {
     $to = "solo.dancestudio@yandex.ru";
-    $subject = "Отправка формы";
-    $message = "Имя: " . $name . "\n" . "Возраст: " . $age . "\n" . "Группа: " . $group . "\n" . "Эл. адрес: " . $email . "\n" . "Телефон: " . $phone;
-    $headers = "От: " . $email;
+    $subject = "Form Submission";
+    $message = "Name: " . $name . "\n" . "Age: " . $age . "\n" . "Group: " . $group . "\n" . "Email: " . $email . "\n" . "Phone: " . $phone;
+    $headers = "From: " . $email;
 
     if (mail($to, $subject, $message, $headers)) {
-      echo "<h1>Успешно отправлено! Спасибо" . $name . ", Мы скоро с Вами свяжемся!</h1>";
+      echo "<h1>Sent Successfully! Thank you" . $name . ", We will contact you shortly!</h1>";
     } else {
-      echo "Что-то пошло не так!";
+      echo "Something went wrong!";
     }
   } else {
     foreach ($errors as $error) {
