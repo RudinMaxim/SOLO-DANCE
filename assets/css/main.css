@@ -713,6 +713,11 @@ form .submit__button-inner button{
   transition: all 130ms ease-in-out;
   font-weight: 600;
   border: none;
+  cursor: pointer;
+}
+form .submit__button-inner button:hover{
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
 
 .personal img{

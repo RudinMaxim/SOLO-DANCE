@@ -169,6 +169,8 @@ header{
   .footer__item{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-width: 500px;
   }
   .footer__window{
     max-width: 600px;
@@ -213,7 +215,7 @@ header{
     background-color: var(--color-main);
   }
   .follow__social a i{
-    font-size: var(--font-second_text);
+    font-size: var(--color-main);
   }
   
   .footer__item-top{
@@ -265,6 +267,10 @@ header{
     text-decoration: none;
     color: var(--color-text);
     font-size: var(--font-second_text);
+    transition: 0.3s all;
+  }
+  .footer__link-list a:hover {
+    text-decoration:underline;
   }
   
   
